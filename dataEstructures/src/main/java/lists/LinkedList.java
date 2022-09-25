@@ -1,6 +1,6 @@
 package lists;
 
-public class linkedList<T> {
+public class LinkedList<T> {
 
     // Declare the pointer
     private Nodo<T> p;
@@ -59,6 +59,49 @@ public class linkedList<T> {
 
         // Change the reference of the last nodo to the new nodo reference
         aux.setRef(newNodo);
+
+    }
+
+    public void pop(){
+
+        if(this.p == null || this.p.getRef() == null){
+            this.p = null;
+            return;
+        }
+
+        Nodo<T> befAux = new Nodo<>();
+        Nodo<T> aux = this.p;
+
+        while (aux.getRef() != null){
+            befAux = aux;
+            aux = aux.getRef();
+        }
+
+        befAux.setRef(null);
+
+    }
+
+    public void remove(T value){
+
+        if(this.p == null){
+            this.p = null;
+            return;
+        }
+
+        if(this.p.getRef() == null && this.p.getInf() == value){
+            this.p = null;
+            return;
+        }
+
+        Nodo<T> aux = this.p;
+        Nodo<T> befAux = this.p;
+
+        while(aux.getInf() != value && aux.getRef() != null){
+            befAux = aux;
+            aux = aux.getRef();
+        }
+
+        befAux.setRef(null);
 
     }
 
