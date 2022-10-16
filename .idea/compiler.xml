@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dataEstructures" />
+        <module name="dataStructures" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dataEstructures" target="18" />
+      <module name="dataStructures" target="18" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dataEstructures/dataEstructures.iml" filepath="$PROJECT_DIR$/dataEstructures/dataEstructures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataStructures/dataEstructures.iml" filepath="$PROJECT_DIR$/dataStructures/dataEstructures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataEstructures/dataStructures.iml" filepath="$PROJECT_DIR$/dataEstructures/dataStructures.iml" />
     </modules>
   </component>
 </project>
